@@ -13,3 +13,8 @@
 '''
 
 
+n = int(input('Укажите количество элементов в массиве: '))
+list_1 = [int(input(f'{i + 1}-й элемент: ')) for i in range(n)]
+
+amt = list_1.count(int(input('Укажите искомое число: ')))
+print(amt)
