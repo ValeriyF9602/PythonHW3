@@ -14,3 +14,9 @@
 '''
 
 
+size = int(input('Укажите размер массива: '))
+list_1 = [int(input(f'{i + 1}-й элемент: ')) for i in range(size)]
+
+num = int(input('Введите число: '))
+list_2 = [abs(num - list_1[i]) for i in range(size)]
+print(list_1[list_2.index(min(list_2))])
